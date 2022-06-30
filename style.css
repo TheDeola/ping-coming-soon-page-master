@@ -92,6 +92,10 @@ input {
     padding: 10px;
     border-radius: 50%;
 }
+.socials img:hover {
+    background-color: var(--Blue);
+    cursor: pointer;
+}
 .copyright {
     font-size: x-small;
 }
