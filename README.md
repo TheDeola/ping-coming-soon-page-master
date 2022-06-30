@@ -38,8 +38,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution](https://your-solution-url.com)
-- Live Site URL: [Live Site](https://your-live-site-url.com)
+- Solution URL: [Solution](https://github.com/TheDeola/ping-coming-soon-page-master)
+- Live Site URL: [Live Site](https://ping-launch-soon.netlify.app)
 
 ## My process
 
@@ -85,11 +85,11 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 ### Useful resources
 
-- [MDN](https://www.example.com) 
+- [MDN](https://developer.mozilla.org/en-US/) 
 
 ## Author
 
-- Website - [TheDeola](https://www.your-site.com)
+- Website - [TheDeola](https://thedeola.netlify.app)
 - Frontend Mentor - [@TheDeola](https://www.frontendmentor.io/profile/TheDeola)
 - Twitter - [@deolacodes](https://www.twitter.com/deolacodes)
 
