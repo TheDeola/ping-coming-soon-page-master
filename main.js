@@ -1,34 +1,42 @@
-const email = document.getElementById('email');
-const btn = document.getElementById('submit');
+const form = document.getElementById('form');
+const email = document.getElementById('email')
+const btn = document.getElementById('submit')
 
-const form = document.getElementById('form')
 
-form.addEventListener('submit', (e) => {
+btn.addEventListener('click', (e) =>{
     e.preventDefault();
-    checkInput();
+    // document.body.style.backgroundColor = 'red'
+    checkInput()
 })
 
-const checkInput = () => {
-    const emailValue = email.value.trim();
+function checkInput() {
+    const emailValue = email.value.trim()
 
-    if (emailValue === '') {
-        setError (email, 'Email cannot be empty')
-    } else if (!isEmail(emailValue)) {
-        setError (email, 'Please provide a valid email address')
-    } else {
-        setSuccess(email);
+    if (emailValue === '' || !isEmail(emailValue)) {
+        setError(email, 'error')
     }
+
+    else {
+        setSuccess(email)
+    }
+
 }
 
 const setError = (input, message) => {
     const formControl = input.parentElement;
-    const small = formControl.querySelector('small');
-    small.innerText = message;
-    formControl.className = 'form-control error';
+    const small = formControl.querySelector('small')
+    input.classList.add('error')
+    formControl.className = 'form-control error'
+    message = small.innerText
+//     const small = formControl.querySelector('small');
+//     small.innerText = message;
+//     formControl.className = 'form-control error';
 }
 
 const setSuccess =(input) => {
     const formControl = input.parentElement;
+    input.classList.add('success')
+
     formControl.className='form-control success'
 }
 

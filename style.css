@@ -72,6 +72,20 @@ input {
 ::placeholder {
     color: var(--PaleBlue);
 }
+
+
+
+.form-control  .error {
+    border: 1px solid red; 
+}
+
+.form-control.error small {
+    visibility: visible;
+}
+
+.form-control  .success {
+    border: 5px solid rgb(33, 218, 8); 
+}
 #submit {
     background-color: var(--Blue);
     border: .5px solid var(--Blue);
